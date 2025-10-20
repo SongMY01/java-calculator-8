@@ -34,6 +34,7 @@ public class Application {
             System.out.println("결과 : " + result);
         } catch (IllegalArgumentException e) {
             System.out.println("[ERROR] " + e.getMessage());
+            throw e;
             // 종료는 return으로 (System.exit() 금지)
         }
     }
